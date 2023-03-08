@@ -16,7 +16,10 @@ const MovieGetter = async () => {
   console.log("first", movieArray.slice(0, 3));
   return (
     <div>
-      page <div><MovieList movieItems={movieArray} /></div>
+      page{" "}
+      <div className="grid grid-cols-6 gap-2">
+        <MovieList movieItems={movieArray} />
+      </div>
       nnnn
     </div>
   );
