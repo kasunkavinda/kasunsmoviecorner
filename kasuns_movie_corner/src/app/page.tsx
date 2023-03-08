@@ -1,11 +1,12 @@
 import React from "react";
 import MovieGetter from "./movieGetter/page";
 
-const page = async () => {
+const page = () => {
   console.log("third");
   return (
     <div>
       page
+       {/* @ts-expect-error Server Component */}
       <MovieGetter />
     </div>
   );

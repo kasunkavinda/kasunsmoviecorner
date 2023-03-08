@@ -5,19 +5,20 @@ import { MovieListType } from "../../types/types";
 import Image from "next/image";
 
 const MovieList = (props: any) => {
-  //console.log("second", movieItems);
   return (
     <div>
       {props.movieItems.map((item: MovieListType) => {
         return (
           <div key={item.id}>
             {item.original_title}
+            <div>
             <Image
               src={`https://image.tmdb.org/t/p/w500/${item.poster_path}`}
-              alt="Picture of the author"
+              alt={`Poster of the ${item.original_title} movie`}
               width={499}
               height={748}
             />
+            </div>
           </div>
         );
       })}
