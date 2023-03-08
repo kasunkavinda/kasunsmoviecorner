@@ -1,5 +1,3 @@
-"use-client";
-
 import React from "react";
 import { MovieListType } from "../../types/types";
 import Image from "next/image";
