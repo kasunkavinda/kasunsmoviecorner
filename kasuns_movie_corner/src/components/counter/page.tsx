@@ -1,11 +1,13 @@
-import React from 'react'
-import type { RootState } from '../../store/store'
-import { useSelector, useDispatch } from 'react-redux'
-import { decrement, increment } from '../../slices/counterSlice'
+"use client";
+
+import React from "react";
+import type { RootState } from "../../store/store";
+import { useSelector, useDispatch } from "react-redux";
+import { decrement, increment } from "../../slices/counterSlice";
 
 export function Counter() {
-  const count = useSelector((state:any) => state.counter.value)
-  const dispatch = useDispatch()
+  const count = useSelector((state: RootState) => state.counter.value);
+  const dispatch = useDispatch();
 
   return (
     <div>
@@ -25,5 +27,5 @@ export function Counter() {
         </button>
       </div>
     </div>
-  )
+  );
 }

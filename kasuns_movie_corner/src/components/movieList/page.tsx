@@ -3,6 +3,7 @@ import { MovieListType } from "../../types/types";
 import Image from "next/image";
 
 const MovieList = (props: any) => {
+  console.log("{props.movieItems", props.movieItems);
   return (
     <>
       {props.movieItems.map((item: MovieListType) => {

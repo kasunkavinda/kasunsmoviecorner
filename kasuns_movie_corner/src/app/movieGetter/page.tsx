@@ -20,7 +20,6 @@ const MovieGetter = async () => {
       <div className="grid grid-cols-6 gap-2">
         <MovieList movieItems={movieArray} />
       </div>
-      nnnn
     </div>
   );
 };
